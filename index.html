@@ -3,77 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Admission Form</title>
+    <title>Employee Information</title>
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             font-family: Arial, sans-serif;
         }
         .container {
-            width: 50%;
-            margin: auto;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #1f1f1f;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        h2 {
+        h1 {
             text-align: center;
-            color: #ff9800;
         }
-        label {
-            display: block;
-            margin: 10px 0 5px;
+        .employee-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        input[type="text"], input[type="email"], input[type="date"], select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #333333;
-            color: #ffffff;
+        .employee-card h2 {
+            margin: 0;
         }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #ff9800;
-            color: #ffffff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #e68a00;
+        .employee-card p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Student Admission Form</h2>
-        <form>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="course">Select Course</label>
-            <select id="course" name="course" required>
-                <option value="">Choose an option</option>
-                <option value="computer_science">Computer Science</option>
-                <option value="business">Business Administration</option>
-                <option value="design">Design</option>
-                <option value="engineering">Engineering</option>
-            </select>
-            
-            <input type="submit" value="Submit">
-        </form>
+        <h1>Employee Information</h1>
+        <div class="employee-card">
+            <h2>John Doe</h2>
+            <p>Position: Software Engineer</p>
+            <p>Email: john.doe@example.com</p>
+        </div>
+        <div class="employee-card">
+            <h2>Jane Smith</h2>
+            <p>Position: Project Manager</p>
+            <p>Email: jane.smith@example.com</p>
+        </div>
+        <!-- Add more employee cards as needed -->
     </div>
 </body>
 </html>
